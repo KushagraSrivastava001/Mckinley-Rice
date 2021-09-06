@@ -1,34 +1,28 @@
-class Solution
+import java.util.*;
+
+class maxAndmin
 {
-    public static void findminAndmax(int[] Arr)
-    {
-        
-        int max = Arr[0];
-        int min = Arr[0];
- 
-        
-        for (int i = 1; i < Arr.length; i++)
-        {
-           
-            if (Arr[i] > max) {
-                max = Arr[i];
-            }
- 
-            
-            else if (Arr[i] < min) {
-                min = Arr[i];
-            }
-        }
- 
-        System.out.println("The minimum array element is " + min);
-        System.out.println("The maximum array element is " + max);
-    }
- 
-    public static void main(String[] args)
-    {
-        int[] Arr = { 5, 8, 4, 3, 7, 3 };
- 
-       
-        findMinAndMax(A);
-    }
+public static void main(String args[])
+{
+Scanner s=new Scanner(System.in);
+int large,small,i;
+int n=s.nextInt();
+int arr[]=new int[n];
+for(int i=0;i<n;i++)
+{
+    arr[i]=sc.nextInt();
+}
+large=small=a[0];
+for(i=1;i<n;++i)
+{
+    if(a[i]>large)
+        large=a[i];
+
+    if(a[i]<small)
+        small=a[i];
+}
+
+System.out.print(“\nThe smallest element is ” + small );
+System.out.print(“\nThe largest element is ” + large );
+}
 }
